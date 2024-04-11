@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Gvantsa Jinika" />
+    <meta http-equiv="refresh" content="30" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css "
+  />
+
+  </head>
+  <body>
+  <header>
+    <div class="header-div">
+    <img src="./play-icon.png" alt="logo" />
+    <button><p>Search for Movies, Events, Plays, Sports and Activities...</p>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="20" viewBox="0 0 6 16">
+      <path fill="#b6c9d6" d="M1.136,15.5c-0.17,0-0.33-0.066-0.45-0.186c-0.248-0.248-0.248-0.651,0-0.899l8.09-7.713 l0.525,0.526l-7.724,8.095C1.465,15.434,1.306,15.5,1.136,15.5z"></path><path fill="#788b9c" d="M5.191,10.811L1.232,14.96C1.205,14.987,1.173,15,1.136,15c-0.026,0-0.063-0.007-0.096-0.04 c-0.053-0.053-0.053-0.139-0.017-0.175L5.191,10.811 M8.785,6.003l-8.452,8.058c-0.444,0.444-0.444,1.163,0,1.606 C0.554,15.889,0.845,16,1.136,16c0.291,0,0.581-0.111,0.803-0.333L10,7.22L8.785,6.003L8.785,6.003z"></path><g><path fill="#d1edff" d="M10 0.5A5.5 5.5 0 1 0 10 11.5A5.5 5.5 0 1 0 10 0.5Z"></path><path fill="#788b9c" d="M10,1c2.757,0,5,2.243,5,5s-2.243,5-5,5S5,8.757,5,6S7.243,1,10,1 M10,0C6.686,0,4,2.686,4,6 s2.686,6,6,6s6-2.686,6-6S13.314,0,10,0L10,0z"></path></g>
+      </svg></button></div>
+  <div class="fire-new-icon">
+  <img src="https://www.svgrepo.com/show/13210/flame.svg"> <!-- Closing '>' added here -->
+  <span><b>NEW</b></span> 
+  <img src="https://www.svgrepo.com/show/486366/alarm-bell-filled.svg"> <!-- Closing '>' added here -->
+  <span><b>8+</b></span>
+  <button><p> Username</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></button>
+</div>
+
+
+  </header>
+  
+    <div class="main-div">
+      <aside class="aside">
+        <div class="movie">
+            <span>Movies</span>
+        </div>
+        <div class="events">
+        
+            <span>Events</span>
+        </div>
+        <div class="people">
+            <span>People</span>
+        </div>
+        <div class="sports">
+        <span>Sports</span>
+        </div>
+      </aside>
+      <main>
+    <div class="main-container">
+      <div class="movie-slider">
+          <div class="slider">
+            <img src="https://image.tmdb.org/t/p/original//qdIMHd4sEfJSckfVJfKQvisL02a.jpg"  alt="forest gumb">
+          </div>
+        <div class="slider">
+          <img src="https://image.tmdb.org/t/p/original//cXQH2u7wUIX1eoIdEj51kHXoWhX.jpg"    alt="jason">
+        </div>
+        <div class="slider">
+          <img src="https://image.tmdb.org/t/p/original//60PJPzXtQmLQdaCNuWUrrHe1mzu.jpg" alt="">
+      </div>
+      <div class="slider">
+        <img src="https://image.tmdb.org/t/p/original//zwgDZw9dyrgkYz2RCOb2HvUDlt2.jpg"  alt="romantic">
+    </div class="slider">
+    <div class="slider">
+    <img src="https://image.tmdb.org/t/p/original//q2CtXYjp9IlnfBcPktNkBPsuAEO.jpg" alt="">
+        </div>
+    </div>
+  </div>
+  <section class="upcoming-movies" id="upcoming-movies-section">
+    <h2>Movies</h2>
+  <section class="upcoming-movies-container">
+      <article class="movie">
+       
+      </article>
+    </section>
+  </section>
+    
+</main>
+</div> 
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <script src="./mainMovieFolder.js"></script>
+</html> 
